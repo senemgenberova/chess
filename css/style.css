@@ -1,0 +1,32 @@
+body{
+	width: 1170px;
+	margin: 50px auto;
+}
+#chess{
+	font-size: 25px;
+}
+
+.square1{
+	height: 100px;
+	width: 100px;
+	background:#145252;
+	float: left;
+}
+
+[class*=square]:hover{
+	box-sizing: border-box;
+	border: 2px solid red;
+}
+
+.square2{
+	height: 100px;
+	width: 100px;
+	background: #ccc;
+	float: left;
+	/*border-bottom: 1px solid white; 
+	border-right: 1px solid white;*/
+}
+
+.clear{
+	clear: both;
+}

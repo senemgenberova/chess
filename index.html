@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var a = "#";
+		var n = Number(prompt("Enter any number: "));
+
+        for (var i = 1; i <= n; i++) {
+            document.write(a);
+
+            for (var j = 2*n - 2 * a.length - 1; j >= 0; j--) {
+                document.write("&nbsp&nbsp");
+            }
+
+            document.write(a);
+            document.write("<br>");
+            a = a + "#";
+        }
+	</script>
+
+	<!-- <script>
+		// Bu mellimkidi
+
+		var char = '';
+        var bosluq = '';
+        var n = Number(prompt("Enter any number: "));
+
+        for (var i = 0; i < n; i++) {
+            char = char + '#';
+
+            for (var j = 0; j < 2*n - (i + 1) * 2; j++) {
+                bosluq = bosluq + '&nbsp;&nbsp;';
+            }
+
+            document.write(char + bosluq + char + '<br>');
+
+            bosluq = '';
+
+        }
+	</script> -->
+</body>
+</html>

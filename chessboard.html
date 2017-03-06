@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ChessBoard</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="chess"></div>
+	
+
+	<script>		
+		var n = Number(prompt("Enter any number: "));
+		var chessboard = document.getElementById("chess"); 		
+		for(var i=1;i<=n;i++){	
+			chessboard.innerHTML += i;		
+			for(var j = 1; j<=n;j++){
+				if(i%2==1){					
+					if(j%2==1){
+						chessboard.innerHTML += '<div class="square1 "></div>';
+					}
+					else{
+						chessboard.innerHTML += '<div class="square2"></div>';
+					}
+				}
+				else{
+					if(j%2==1){
+						chessboard.innerHTML += '<div class="square2"></div>';
+					}
+					else{
+						chessboard.innerHTML += '<div class="square1"></div>';
+					}
+				}				
+			}
+			chessboard.innerHTML += '<div class="clear"></div>';		
+		}
+	</script>
+</body>
+</html>
